@@ -1,0 +1,44 @@
+@import "./variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $ffMain;
+  font-size: 22px;
+  line-height: 1.2;
+
+  color: $cText;
+  background-color: $cBackground;
+}
+
+button {
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: $cText;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 120px 0;
+  position: relative;
+}
