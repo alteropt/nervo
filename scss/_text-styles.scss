@@ -3,6 +3,14 @@
 .slogan-text {
   font-size: 80px;
   font-family: $ffSecondary;
+
+  @media(max-width: 1024px) {
+    font-size: 48px;  
+  }
+
+  @media(max-width: 768px) {
+    font-size: 30px;
+  }
 }
 
 h1,
@@ -17,12 +25,20 @@ h1,
 .h1 {
   font-size: 70px;
   font-weight: 700;
+
+  @media(max-width: 1024px) {
+    font-size: 52px;  
+  }
 }
 
 h2,
 .h2 {
   font-size: 50px;
   font-weight: 700;
+
+  @media(max-width: 1024px) {
+    font-size: 36px;  
+  }
 }
 
 h3,

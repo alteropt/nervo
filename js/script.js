@@ -1,10 +1,21 @@
 $(document).ready(function () {
-  $(".portfolio__works").slick({
+  const portfolioSlickParams = {
     slidesToShow: 3,
     infinite: false,
     slidesToScroll: 3,
     dots: true,
-  });
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+    ],
+  };
+
+  $(".portfolio__works").slick(portfolioSlickParams);
 
   $(".stack__inner").slick({
     slidesToShow: 10,
@@ -12,6 +23,21 @@ $(document).ready(function () {
     slidesToScroll: 1,
     dots: true,
     arrows: false,
+
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 8,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 6,
+        },
+      },
+    ],
   });
 
   $(".portfolio__tabs ul li").on("click", function () {
@@ -25,13 +51,26 @@ $(document).ready(function () {
       if (work.dataset.portfolioType === this.dataset.portfolioType) {
         work.classList.add("active");
 
-        $(".portfolio__works").slick({
-          slidesToShow: 3,
-          infinite: false,
-          slidesToScroll: 3,
-          dots: true,
-        });
+        $(".portfolio__works").slick(portfolioSlickParams);
       }
     });
+  });
+
+  $(".part.yours > ul li").on("click", function () {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+    } else {
+      $(".part.yours > ul li").removeClass("active");
+      $(this).addClass("active");
+    }
+  });
+
+  $(".part.ours > ul li").on("click", function () {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+    } else {
+      $(".part.ours > ul li").removeClass("active");
+      $(this).addClass("active");
+    }
   });
 });
