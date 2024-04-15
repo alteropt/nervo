@@ -73,4 +73,19 @@ $(document).ready(function () {
       $(this).addClass("active");
     }
   });
+
+  $("#burger").on("click", function () {
+    $("body").addClass("modal-opened");
+    $("header").addClass("active");
+  });
+
+  $("#header-close").on("click", function () {
+    $("body").removeClass("modal-opened");
+    $("header").removeClass("active");
+  });
+
+  $(".header__navigation ul li").on("click", function () {
+    $("body").removeClass("modal-opened");
+    $("header").removeClass("active");
+  });
 });

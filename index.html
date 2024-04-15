@@ -17,8 +17,34 @@
       <div class="container">
         <div class="header__inner">
           <a href="#" class="logo">
-            <img src="./img/logo.svg" alt="logo" />
+            <picture>
+              <source
+                srcset="./img/logo-small.svg"
+                media="(max-width: 768px)"
+              />
+              <img src="./img/logo.svg" alt="logo" />
+            </picture>
           </a>
+          <div class="header__mobile-btns">
+            <a href="#">
+              <figure>
+                <img src="./img/telegram.svg" alt="telegram" />
+              </figure>
+            </a>
+            <button id="burger">
+              <figure>
+                <img src="./img/burger.svg" alt="burger" />
+              </figure>
+            </button>
+          </div>
+          <div class="header__mobile">
+            <a href="#" class="logo logo-mobile">
+              <img src="./img/logo-mobile.svg" alt="logo" />
+            </a>
+            <button class="header__close" id="header-close">
+              <img src="./img/cross.svg" alt="cross" />
+            </button>
+          </div>
           <nav id="navigation" class="header__navigation">
             <ul>
               <li>
@@ -38,7 +64,18 @@
               </li>
             </ul>
           </nav>
+          <div class="social">
+            <a href="#"><img src="./img/social/1.svg" alt="instagram" /></a>
+            <a href="#"><img src="./img/social/2.svg" alt="linkedin" /></a>
+            <a href="#"><img src="./img/social/3.svg" alt="facebook" /></a>
+          </div>
           <a href="#" class="button-link" aria-label="get in touch"
+            >Get in Touch</a
+          >
+          <a
+            href="#"
+            class="button-link button-link-dark"
+            aria-label="get in touch"
             >Get in Touch</a
           >
         </div>
