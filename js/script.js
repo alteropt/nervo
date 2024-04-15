@@ -56,7 +56,7 @@ $(document).ready(function () {
     ],
   });
 
-  $(".portfolio__tabs ul li").on("click", function () {
+  $(".portfolio__tabs ul a").on("click", function () {
     $(".portfolio__tabs ul li").removeClass("active");
     $(this).addClass("active");
 

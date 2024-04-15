@@ -96,10 +96,14 @@ header {
           flex-direction: column;
 
           li {
-            padding: 16px;
             border-radius: 18px;
             background-color: #1a1a1a;
             width: 100%;
+
+            a {
+              width: 100%;
+              padding: 16px;
+            }
           }
         }
       }

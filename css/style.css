@@ -148,6 +148,10 @@ section {
     padding: 0 20px !important;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 .button-link {
   display: flex;
   justify-content: center;
@@ -514,10 +518,13 @@ header {
     flex-direction: column;
   }
   header.active .header__navigation ul li {
-    padding: 16px;
     border-radius: 18px;
     background-color: #1a1a1a;
     width: 100%;
+  }
+  header.active .header__navigation ul li a {
+    width: 100%;
+    padding: 16px;
   }
   header.active .social {
     display: flex;
