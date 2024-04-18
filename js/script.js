@@ -100,7 +100,7 @@ $(document).ready(function () {
     $("header").removeClass("active");
   });
 
-  $(".header__navigation ul li").on("click", function () {
+  $(".header__navigation ul a").on("click", function () {
     $("body").removeClass("modal-opened");
     $("header").removeClass("active");
   });
