@@ -1304,8 +1304,10 @@ header {
   border-radius: 100%;
   background-color: #A8FF8A;
 }
-.stages__pattern .stage-arrow {
-  flex-basis: 75%;
+@media (max-width: 1440px) {
+  .stages__pattern .stage-arrow {
+    flex-basis: 75%;
+  }
 }
 
 .stages__name {

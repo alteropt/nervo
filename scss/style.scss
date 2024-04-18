@@ -944,7 +944,9 @@ header {
   }
 
   .stage-arrow {
-    flex-basis: 75%;
+    @media (max-width: 1440px) {
+      flex-basis: 75%;
+    }
   }
 }
 
